@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:700&display=swap');
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    min-height: 100vh;
+    background: #fff;
+    align-items: center;
+    justify-content: center;
+}
+
+.introduction{
+
+    background-color:#FF71CD;
+    
+}
+
+.container-fluid{
+
+    background-color:#FFF7FC;
+}
+
+.undergrad{
+    display: flex;
+    flex: 0;
+    background-color:#FFF7FC;
+    margin:50px;
+    padding: 10px; 
+    text-align: center;}
+
+.master {
+    display: flex;
+    flex: 0;
+    background-color:#FFF7FC;
+    margin:50px;
+    padding: 10px;
+    text-align: center;}
+
+.educational{
+
+text-align: center;
+margin: 30px;
+
+}
+
+h4 {
+    font-size: small;
+    margin: 30px;
+}
+
+.description{
+   margin: 30px;
+   border-color: black;
+   border-style: dotted;
+   padding: 20px;
+}
