@@ -9,22 +9,23 @@ body {
     line-height: 1.5;
     margin: 0;
     min-height: 100vh;
-    background: #fff;
+
     align-items: center;
   justify-content: center;
   }
 
 
   .buttons-container {
-    width: 100%; 
+    width: 100%;
     flex-direction: column;
     align-items: center; 
     justify-content: center; 
     height: 100vh; 
-    margin: 100px;
+    margin: 300px;
   }
   
   button.learn-more {
+    width: 10rem; 
     font-weight: 600;
     color: #382b22;
     text-transform: uppercase;
@@ -81,14 +82,50 @@ button.learn-more:active::before {
   align-items: center; 
   justify-content: center; 
   height: 100vh; 
-  margin: 100px;
+  margin-top: 160px;
 }
 
 img{
   margin:40px;
+  padding: 15px;
+  border-style:double;
+  /*background-color:#8B93FF;*/
+  box-shadow: 0 -5px 5px -5px #333, 
+              0 5px 5px -5px #333;
+              animation: shimmy 3s infinite;
+              animation-direction: alternate;
 }
 
 .container-fluid{
     
-  background-color:#FFF7FC;
+  background-color:#ffe3e2;
+}
+
+.contactme {
+ 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto; 
+
+}
+
+
+.icons-box{
+
+  margin-left: 100px;
+
+}
+
+.d-grid {
+  margin-top:50px;
+}
+
+@keyframes shimmy {
+  0% {
+    transform: translate(0, 0);    
+  }
+  100% {
+    transform: translate(20px, 20px);
+  }
 }
