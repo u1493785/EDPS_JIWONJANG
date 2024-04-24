@@ -1,57 +1,274 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik:700&display=swap');
 
-body {
-    font-family: 'Rubik', sans-serif;
-    font-size: 1rem;
-    line-height: 1.5;
-    min-height: 100vh;
-    background: #fff;
-    align-items: center;
-    justify-content: center;
-}
 
-.introduction{
-
-    background-color:#FF71CD;
+.body,html{
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  
+  .section{
+    background:yellow;
+  }
+  .banner{
+    width:100%;
+    background:url('http://www.alstercloud.de/wp-content/uploads/2017/01/header.jpg') no-repeat;
+    background-size:cover;
+    background-position:center;
+    min-height:600px;
+    padding-top: 5px;
     
+  }
+
+.contact{
+  margin-top:200px;px;
 }
 
-.container-fluid{
 
-    background-color:#FFF7FC;
-}
+  .blank {
+    margin-top:180px;
+  }
 
-.undergrad{
+  .banner h3{
+    text-align:center;
+    margin-top: 200px;
+    color:#fff;
+    font-size:80px;
+    font-weight:700;
+    font-family: 'Josefin Sans', sans-serif;
+   }
+  .banner p{
+    text-align:center;
+    color:#fff;
+    font-size:1.3em;
+    opacity:1;
+    font-family: 'Josefin Sans', sans-serif;
+    
+  }
+  .opaque-navbar .container .navbar-header >a{
+    color:#fff;
+    text-transform:uppercase;
+    font-weight:bold;
+  }
+  .opaque-navbar .container .navbar-collapse >ul >li >a{
+    color:#fff;
+    text-transform:uppercase;
+    font-weight:700;
+  }
+  
+  .opaque-navbar{
+    background-color:rgba(0,0,0,0);
+    border-bottom:1px solid #eee;
+    
+    transition : background-color 0.5s ease 0s;
+  }
+  .opaque-navbar.opaque {
+      background-color:black ;
+      border:0px;    
+      transition: background-color .5s ease 0s;
+  }
+  
+  ul.dropdown-menu {
+      background-color: black;
+  }
+  .abt{
+    text-align:center;
+    padding-bottom: 70px;
+  }
+  .abt .jumbotron  {
+    background-color:#e67e22;
+    padding-bottom: 80px;
+    padding-top: 80px;
+
+    
+  }
+  .abt h3{
+    
+    color:white;
+    font-size:40px; 
+    
+  }
+   hr{
+    width:100px;
+    border-width:3px;
+    
+  }
+  .abt p{
+    
+    color: rgba(255, 255, 255, 0.7);
+    font-size:20px;
+  }
+  .btn{
+    border:none;
+    border-radius:300px;
+    font-weight:bold;
+    text-transform:uppercase;
+    
+  }
+  .btn-default{
+    padding-bottom: 15px;
+    padding-top:15px;
+    padding-left:30px;
+    padding-right:30px;
+  }
+  
+  .no-padding{
+    padding:0;
+    margin-top:-30px;
+  }
+  
+   .col-6{
+    padding: 0 0;
+    
+  }
+  
+  .no-padding h1{
+    padding-top:55px;
+    text-transform:uppercase;
+  }
+  .no-padding hr{
+    border: 2px solid #d0d0d0;
+  }
+  .bg-dark{
+    background-color:#222222;
+    color:white;
+  }
+  
+  .primary{
+    border:1px solid #d35400;
+  }
+  
+  .my-font{
+    font-size:20px;
+    
+  }
+  .bg-dark{
+    padding-top:55px;
+    padding-bottom:30px;
+  }
+  .padded{
+    padding-top:200px;
+  }
+  .padded .col-lg-4 a{
+   color:#d35400;
+    font-weight:bold;
+  }
+  
+  .list-icon{
+    list-style-type:none;
+    text-decoration:none;
+    }
+  .list-icon li{
+    display:inline;
+    padding-right:20px;
+  }
+  .list-icon .fa{
+    font-size:40px;
+  }
+  @media (max-width: 992px) {
+    body
+    {
+      background:white;
+    }
+    .opaque-navbar {
+      background-color: black;
+      height: 60px;
+      transition: background-color .5s ease 0s;
+  }
+  
+  }
+  .imagine {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 12px 12px 0 0;
+  }
+
+  .puppy {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  .edu {
+    margin-top: 2%;
+    margin-left: 14px;
+  }
+
+  .author {
     display: flex;
-    flex: 0;
-    background-color:#FFF7FC;
-    margin:50px;
-    padding: 10px; 
-    text-align: center;}
+    margin-top: 2%;
+    margin-left: 14px;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 15px;
+  }
 
-.master {
+  .body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .flex-container {
     display: flex;
-    flex: 0;
-    background-color:#FFF7FC;
-    margin:50px;
-    padding: 10px;
-    text-align: center;}
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
 
-.educational{
+  .myContainer-fluid {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    border-width: 10px;
+    border-radius: 12px;
+    background: #f8f8f8;
+  }
 
-text-align: center;
-margin: 30px;
+  @media (min-width: 520px) {
+    .myContainer-fluid {
+        width: calc(100% / 2 - 10px);
+    }
+  }
 
-}
+  @media (min-width: 960px) {
+    .myContainer-fluid {
+        width: calc(100% / 3 - 10px);
+    }
+  }
 
-h4 {
-    font-size: small;
-    margin: 30px;
-}
+  .people {
+    padding-left: 5%;
+    font-weight: bolder;
+  }
 
-.description{
-   margin: 30px;
-   border-color: black;
-   border-style: dotted;
-   padding: 20px;
-}
+  .people p {
+    margin: 0;
+  }
+
+  .people .name {
+    font-size: 1.2em;
+  }
+
+  .people .time {
+    font-size: 0.8em;
+  }
+
+  .hour {
+    display: flex;
+    flex-direction: column;
+    color: grey;
+  }
+
+  .jiwon {
+    width: fit-content;
+    border-radius: 8px;
+    padding: 0 8px;
+    background-color: #3eb5ce;
+    border-width: 100px;
+  }
+  
+  .bbooing{
+    margin-top:180px;
+  }
+
+
